@@ -1,0 +1,11 @@
+---
+const { url, icon } = Astro.props;
+---
+
+<a
+  class="rounded-full bg-background-light p-5 w-4 h-4 flex justify-center items-center hover:opacity-90 transition-all"
+  href={url}
+  target="_blank"
+>
+  <i class={`text-2xl text-white ${icon}`}></i>
+</a>

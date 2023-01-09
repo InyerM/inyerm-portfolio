@@ -1,0 +1,31 @@
+---
+import "../styles/globals.css";
+const {
+  dark = true,
+  title = "InyerM - Portfolio",
+  description = "InyerM - Portfolio",
+} = Astro.props;
+---
+
+<html lang="es" class:list={[{ "bg-background": dark }, "scroll-smooth"]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#fff600" />
+    <link rel="icon" href="/favicon.svg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+
+    <script src="https://cdn.usefathom.com/script.js" data-site="RCIEAOAU" defer
+    ></script>
+  </head>
+
+  <body class="relative overflow-x-hidden"><slot /></body>
+</html>
