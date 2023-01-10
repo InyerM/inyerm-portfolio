@@ -1,50 +1,19 @@
 .card {
-  height: 254px;
-  border-radius: 20px;
-  /* background: #17161b; */
-  position: relative;
-  /* padding: 1.8rem; */
-  border: 2px solid #585858;
-  transition: 0.5s ease-out;
-  overflow: visible;
-  @apply cursor-pointer w-full md:w-[400px];
+  @apply h-[350px] relative transition-all duration-1000 
+  ease-in-out rounded-xl cursor-pointer w-full md:w-[420px] my-5
+  overflow-hidden shadow-sm shadow-purple-300;
 }
 
-.card-details {
-  color: black;
-  height: 100%;
-  gap: .5em;
-  display: grid;
-  place-content: center;
+.card-image {
+  @apply h-full w-full absolute transition-all duration-1000 ease-in-out 
+  rounded-xl flex items-center;
 }
 
-.card-button {
-  @apply bg-secondary-light;
-  transform: translate(-50%, 125%);
-  width: 80%;
-  border-radius: 1rem;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  opacity: 0;
-  transition: 0.3s ease-out;
+.card-description {
+  @apply flex absolute gap-4 flex-col bg-gray-900 h-4/6 bottom-0
+  duration-1000 rounded-xl transition-all ease-in-out p-4 text-white translate-y-full;
 }
 
-.text-body {
-  color: rgb(134, 134, 134);
-}
-
-/*Hover*/
-.card:hover {
-  @apply border-secondary-light;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
+.card:hover .card-description {
+  @apply translate-y-0;
 }

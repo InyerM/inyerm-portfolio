@@ -1,4 +1,5 @@
 ---
+import { projects } from "../constants";
 import ProjectCard from "./ProjectCard.astro";
 ---
 
@@ -7,12 +8,11 @@ import ProjectCard from "./ProjectCard.astro";
   <p class="mt-5">
     <span class="text-xl text-white">Most recent projects</span>
   </p>
-  <section class="grid md:grid-cols-2 gap-5 my-5 grid-cols-1">
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
-    <ProjectCard />
+  <section class="grid md:grid-cols-2 gap-2 my-5 grid-cols-1">
+    {
+      projects.map((project) => {
+        return <ProjectCard {...project} />;
+      })
+    }
   </section>
 </section>
