@@ -2,34 +2,20 @@
 import { socialLinks } from "../constants";
 import Button from "./Button.astro";
 import CustomSocialLinks from "./CustomSocialLinks.astro";
+import { t } from "i18next";
 ---
 
 <div class="rounded-full p-1 bg-gradient-to-br from-primary to-secondary z-10">
-  <img
-    src="/images/avatar.png"
-    alt=""
-    width={200}
-    height={200}
-    class="rounded-full"
-  />
+  <img src="/images/avatar.png" alt="" width={200} height={200} class="rounded-full" />
 </div>
-<h2 class={`mt-5 text-2xl font-bold text-white`}>Hello 👋</h2>
-<h1 class="text-5xl font-black text-white">I'm Inyer</h1>
+<h2 class={`mt-5 text-2xl font-bold text-white`}>{t("homeSection.title")}</h2>
+<h1 class="text-5xl font-black text-white">{t("homeSection.subtitle")}</h1>
 <p class="mt-3 text-lg text-white max-w-xl">
-  I'm a <span class={`font-semibold`}>Fullstack Developer</span>
-  with a strong passion for building web applications and learning <span
-    class={`font-semibold`}>new technologies</span
-  >.
+  {t("homeSection.description")}
 </p>
-<section
-  class="flex gap-5 p-3 items-center justify-center md:flex-row flex-col"
->
-  <Button>Download CV</Button>
+<section class="flex gap-5 p-3 items-center justify-center md:flex-row flex-col">
+  <Button>{t("homeSection.downloadCv")}</Button>
   <div class="flex gap-2 justify-center">
-    {
-      socialLinks.map((link, index) => (
-        <CustomSocialLinks key={index} {...link} />
-      ))
-    }
+    {socialLinks.map((link, index) => <CustomSocialLinks key={index} {...link} />)}
   </div>
 </section>

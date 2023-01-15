@@ -1,3 +1,15 @@
 {
-  "pageTitle": "InyerM - Portfolio"
+  "pageTitle": "InyerM - Portfolio",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "homeSection": {
+    "title": "Hello 👋",
+    "subtitle": "I'm InyerM",
+    "description": "I'm a <span class={`font-semibold`}>Fullstack Developer</span>. I'm passionate about technology and I love to learn new things. I'm currently working as a NestJs at <a href=\"https://inlaze.com/en/\" target=\"_blank\">Inlaze</a>.",
+    "downloadCv": "Download CV"
+  }
 }

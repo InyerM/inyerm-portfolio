@@ -1,10 +1,11 @@
 ---
 import { LanguageSelector } from "astro-i18next/components";
 import NavButton from "./NavButton.astro";
+import { t } from "i18next";
 const navButtons = [
-  { name: "Home", href: "#" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: t("header.home"), href: "#" },
+  { name: t("header.projects"), href: "#projects" },
+  { name: t("header.contact"), href: "#contact" },
 ];
 ---
 
