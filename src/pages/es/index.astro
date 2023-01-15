@@ -1,13 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Body from "../components/Body.astro";
-import AstroButton from "../components/AstroButton.astro";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Body from "../../components/Body.astro";
+import AstroButton from "../../components/AstroButton.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans, LanguageSelector } from "astro-i18next/components";
-import "../styles";
+import "../../styles";
 
-changeLanguage("en");
+changeLanguage("es");
 ---
 
 <Layout title={t("pageTitle")}>

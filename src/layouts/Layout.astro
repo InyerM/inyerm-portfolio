@@ -1,5 +1,12 @@
 ---
-import "../styles/globals.css";
+import i18next from "i18next";
+
+interface Props {
+  dark?: boolean;
+  title?: string;
+  description?: string | null;
+}
+
 const {
   dark = true,
   title = "InyerM - Portfolio",
@@ -7,7 +14,11 @@ const {
 } = Astro.props;
 ---
 
-<html lang="es" class:list={[{ "bg-background": dark }, "scroll-smooth"]}>
+<!DOCTYPE html>
+<html
+  lang={i18next.language}
+  class:list={[{ "bg-background": dark }, "scroll-smooth"]}
+>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -22,6 +33,7 @@ const {
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta name="generator" content={Astro.generator} />
 
     <script src="https://cdn.usefathom.com/script.js" data-site="RCIEAOAU" defer
     ></script>
