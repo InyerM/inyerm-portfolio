@@ -8,8 +8,8 @@ interface Props {
   githubUrl: string;
 }
 
+import { useTranslation } from "react-i18next";
 import { technologies as techs } from "../../constants";
-import { t } from "i18next";
 
 export const ProjectCard: React.FC<Props> = ({
   description,
@@ -18,6 +18,7 @@ export const ProjectCard: React.FC<Props> = ({
   title,
   githubUrl,
 }) => {
+  const { t } = useTranslation("translation");
   const push = () => window.open(githubUrl, "_blank");
 
   return (
@@ -27,7 +28,9 @@ export const ProjectCard: React.FC<Props> = ({
       </div>
       <div className="card-description">
         <p className="text-title custom-gradient-text">{title}</p>
-        <p className="text-body">{t(`projectCard.description.${description}`)}</p>
+        <p className="text-body">
+          <span>{t(`projectCard.description.${description}`)}</span>
+        </p>
         <section className="flex gap-2 justify-center">
           {technologies.map((tech) => {
             const thisTech = techs.find((t) => t.id === tech);
