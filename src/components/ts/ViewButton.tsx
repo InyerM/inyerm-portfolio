@@ -1,4 +1,4 @@
-import { HiOutlineEye } from "react-icons/hi";
+import { HiOutlineEye } from "react-icons/hi/index";
 import { t } from "i18next";
 
 interface Props {
