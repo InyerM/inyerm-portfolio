@@ -1,8 +1,7 @@
 export const projects = [
   {
     title: "InyerM - Shop",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "inyerm-shop",
     image: "InyerM-Shop.gif",
     technologies: [1, 2, 3, 5, 8, 11, 12],
     deployed: false,
@@ -10,8 +9,7 @@ export const projects = [
   },
   {
     title: "FinanzApp",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "finanz-app",
     image: "FinanzApp.gif",
     technologies: [1, 2, 3, 5, 9, 11, 12],
     deployed: false,
@@ -19,8 +17,7 @@ export const projects = [
   },
   {
     title: "OpenJira",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "open-jira",
     image: "OpenJira.gif",
     technologies: [1, 2, 3, 5, 8, 11, 12],
     deployed: false,
@@ -28,8 +25,7 @@ export const projects = [
   },
   {
     title: "PokemonStatic",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "pokemon-static",
     image: "PokemonStatic.gif",
     technologies: [1, 2, 3, 5, 8],
     deployed: true,
@@ -38,8 +34,7 @@ export const projects = [
   },
   {
     title: "RickAndMorty",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "rick-and-morty",
     image: "RickAndMorty.gif",
     technologies: [3, 5, 6, 7, 10],
     deployed: true,
@@ -48,8 +43,7 @@ export const projects = [
   },
   {
     title: "XKCD Comics",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nunc nisl aliquam mauris",
+    description: "xkcd-comics-app",
     image: "xkcd.gif",
     technologies: [1, 2, 3, 5, 8, 9],
     deployed: true,

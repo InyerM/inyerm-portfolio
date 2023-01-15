@@ -9,15 +9,13 @@ interface Props {
 }
 
 import { technologies as techs } from "../../constants";
-import { ViewButton } from "./";
+import { t } from "i18next";
 
 export const ProjectCard: React.FC<Props> = ({
-  deployed,
   description,
   image,
   technologies,
   title,
-  link,
   githubUrl,
 }) => {
   const push = () => window.open(githubUrl, "_blank");
@@ -29,8 +27,7 @@ export const ProjectCard: React.FC<Props> = ({
       </div>
       <div className="card-description">
         <p className="text-title custom-gradient-text">{title}</p>
-        <p className="text-body">{description}</p>
-        {/* {deployed && <ViewButton link={link} />} */}
+        <p className="text-body">{t(`projectCard.description.${description}`)}</p>
         <section className="flex gap-2 justify-center">
           {technologies.map((tech) => {
             const thisTech = techs.find((t) => t.id === tech);

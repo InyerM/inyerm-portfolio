@@ -19,6 +19,14 @@
   },
   "projectCard": {
     "view": "View",
-    "notDeployed": "Not deployed"
+    "notDeployed": "Not deployed",
+    "description": {
+      "inyerm-shop": "A simple e-commerce app made with NextJs, React, Stripe and more, based on tesla shop website. It's still in development.",
+      "finanz-app": "A financial app made with NextJs and others technologies. There are some features like a budget calculator, and manage your expenses and incomes.",
+      "open-jira": "Project made for practicing with NextJs and Server side rendering. It's a simple Jira clone with limited functions.",
+      "pokemon-static": "This is a simple project made for practicing with NextJs and static site generation. It's a simple pokemon app with a list of pokemons and a detail page.",
+      "rick-and-morty": "Project made with Svelte and SvleteKit. It's a simple app with a list of characters from Rick and Morty and a detail page.",
+      "xkcs-comics-app": "NextJs app with a list of comics from XKCD and a detail page. It's a simple project made for practicing with NextJs and Server side rendering."
+    }
   }
 }

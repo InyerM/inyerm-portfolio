@@ -1,4 +1,3 @@
-// import { HiOutlineEye } from "react-icons/hi/index";
 import { t } from "i18next";
 
 interface Props {
@@ -8,14 +7,7 @@ interface Props {
 export const ViewButton: React.FC<Props> = ({ link }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="text-link">
-      {link ? (
-        <>
-          <span>{t("projectCard.view")}</span>
-          {/* <HiOutlineEye /> */}
-        </>
-      ) : (
-        <span>{t("projectCard.notDeployed")}</span>
-      )}
+      {link ? <span>{t("projectCard.view")}</span> : <span>{t("projectCard.notDeployed")}</span>}
     </a>
   );
 };
