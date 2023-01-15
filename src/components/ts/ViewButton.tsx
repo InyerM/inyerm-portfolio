@@ -1,4 +1,4 @@
-import { HiOutlineEye } from "react-icons/hi/index";
+// import { HiOutlineEye } from "react-icons/hi/index";
 import { t } from "i18next";
 
 interface Props {
@@ -11,7 +11,7 @@ export const ViewButton: React.FC<Props> = ({ link }) => {
       {link ? (
         <>
           <span>{t("projectCard.view")}</span>
-          <HiOutlineEye />
+          {/* <HiOutlineEye /> */}
         </>
       ) : (
         <span>{t("projectCard.notDeployed")}</span>
