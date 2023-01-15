@@ -1,17 +1,23 @@
 ---
 import { projects } from "../constants";
-import ProjectCard from "./ProjectCard.astro";
+import { ProjectCard, ViewButton } from "./ts";
+import { t } from "i18next";
 ---
 
 <section class="mx-auto my-10 w-full">
-  <h1 class="text-5xl font-black text-white">My Projects</h1>
+  <h1 class="text-5xl font-black text-white">{t("projectsSection.title")}</h1>
   <p class="mt-5">
-    <span class="text-xl text-white">Most recent projects</span>
+    <span class="text-xl text-white">{t("projectsSection.subtitle")}</span>
   </p>
   <section class="grid md:grid-cols-2 gap-2 my-5 grid-cols-1">
     {
       projects.map((project) => {
-        return <ProjectCard {...project} />;
+        return (
+          <section class="relative">
+            <ProjectCard {...project} client:load />
+            <ViewButton link={project.link} />
+          </section>
+        );
       })
     }
   </section>

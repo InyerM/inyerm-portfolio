@@ -1,5 +1,5 @@
 .card {
-  @apply h-[350px] relative transition-all duration-1000 
+  @apply h-[320px] relative transition-all duration-1000 
   ease-in-out rounded-xl cursor-pointer w-full md:w-[420px] my-5
   overflow-hidden shadow-sm shadow-purple-300;
 }
@@ -16,4 +16,18 @@
 
 .card:hover .card-description {
   @apply translate-y-0;
+}
+
+.text-link {
+  @apply absolute top-0 left-5 bg-purple-200 text-purple-800 font-semibold
+  text-sm cursor-pointer transition duration-300 ease-in-out
+  rounded-lg px-3 py-2 flex items-center justify-center gap-1;
+}
+
+.text-title {
+  @apply text-2xl font-semibold;
+}
+
+.text-body {
+  @apply text-sm font-normal text-gray-300;
 }

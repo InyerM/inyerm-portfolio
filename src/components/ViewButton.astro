@@ -1,0 +1,10 @@
+---
+import { HiOutlineEye } from "react-icons/hi";
+import { t } from "i18next";
+const { link } = Astro.props;
+---
+
+<a href={link} target="_blank" rel="noopener noreferrer" class="text-link">
+  <span>{t("projectCard.view")}</span>
+  <HiOutlineEye />
+</a>

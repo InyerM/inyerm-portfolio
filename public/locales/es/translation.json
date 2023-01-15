@@ -1,5 +1,6 @@
 {
   "pageTitle": "InyerM - Portafolio",
+  "astroButton": "Desarrollado con",
   "header": {
     "home": "Inicio",
     "about": "Acerca de",
@@ -11,5 +12,13 @@
     "subtitle": "Soy InyerM",
     "description": "Soy un <0>desarrollador fullstack</0> Me apasiona la tecnología y me encanta aprender cosas nuevas. Actualmente trabajo como desarrollador NestJs en <1>Inlaze</1>.",
     "downloadCv": "Descargar CV"
+  },
+  "projectsSection": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de mis proyectos"
+  },
+  "projectCard": {
+    "view": "Ver",
+    "notDeployed": "Sin desplegar"
   }
 }

@@ -1,5 +1,6 @@
 {
   "pageTitle": "InyerM - Portfolio",
+  "astroButton": "Developed with",
   "header": {
     "home": "Home",
     "about": "About",
@@ -11,5 +12,13 @@
     "subtitle": "I'm InyerM",
     "description": "I'm a <0>Fullstack Developer</0>. I'm passionate about technology and I love to learn new things. I'm currently working as a NestJs at <1>Inlaze</1>.",
     "downloadCv": "Download CV"
+  },
+  "projectsSection": {
+    "title": "Projects",
+    "subtitle": "Here are some of my projects"
+  },
+  "projectCard": {
+    "view": "View",
+    "notDeployed": "Not deployed"
   }
 }
