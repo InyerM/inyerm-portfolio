@@ -9,7 +9,7 @@
   "homeSection": {
     "title": "Hola 👋",
     "subtitle": "Soy InyerM",
-    "description": "Soy un <span class={`font-semibold`}>desarrollador fullstack</span> Me apasiona la tecnología y me encanta aprender cosas nuevas. Actualmente trabajo como desarrollador NestJs en <a href=\"https://inlaze.com/en/\" target=\"_blank\">Inlaze</a>.",
+    "description": "Soy un <0>desarrollador fullstack</0> Me apasiona la tecnología y me encanta aprender cosas nuevas. Actualmente trabajo como desarrollador NestJs en <1>Inlaze</1>.",
     "downloadCv": "Descargar CV"
   }
 }

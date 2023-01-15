@@ -9,7 +9,7 @@
   "homeSection": {
     "title": "Hello 👋",
     "subtitle": "I'm InyerM",
-    "description": "I'm a <span class={`font-semibold`}>Fullstack Developer</span>. I'm passionate about technology and I love to learn new things. I'm currently working as a NestJs at <a href=\"https://inlaze.com/en/\" target=\"_blank\">Inlaze</a>.",
+    "description": "I'm a <0>Fullstack Developer</0>. I'm passionate about technology and I love to learn new things. I'm currently working as a NestJs at <1>Inlaze</1>.",
     "downloadCv": "Download CV"
   }
 }

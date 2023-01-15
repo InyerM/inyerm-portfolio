@@ -1,8 +1,9 @@
 ---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 import { socialLinks } from "../constants";
 import Button from "./Button.astro";
 import CustomSocialLinks from "./CustomSocialLinks.astro";
-import { t } from "i18next";
 ---
 
 <div class="rounded-full p-1 bg-gradient-to-br from-primary to-secondary z-10">
@@ -11,7 +12,14 @@ import { t } from "i18next";
 <h2 class={`mt-5 text-2xl font-bold text-white`}>{t("homeSection.title")}</h2>
 <h1 class="text-5xl font-black text-white">{t("homeSection.subtitle")}</h1>
 <p class="mt-3 text-lg text-white max-w-xl">
-  {t("homeSection.description")}
+  <Trans i18nKey={"homeSection.description"}>
+    I'm a <span class={`font-semibold`}>Fullstack Developer</span>. I'm passionate about technology
+    and I love to learn new things. I'm currently working as a NestJs at <a
+      href="https://inlaze.com/en/"
+      target="_blank"
+      class="text-yellow-300 font-semibold">Inlaze</a
+    >.
+  </Trans>
 </p>
 <section class="flex gap-5 p-3 items-center justify-center md:flex-row flex-col">
   <Button>{t("homeSection.downloadCv")}</Button>
