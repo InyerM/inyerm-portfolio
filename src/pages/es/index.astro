@@ -4,14 +4,12 @@ import Header from "../../components/Header.astro";
 import Body from "../../components/Body.astro";
 import AstroButton from "../../components/AstroButton.astro";
 import { t, changeLanguage } from "i18next";
-import { Trans, LanguageSelector } from "astro-i18next/components";
 import "../../styles";
 
 changeLanguage("es");
 ---
 
-<Layout title={t("pageTitle")}>
-  <LanguageSelector showFlag={true} class="languages" />
+<Layout title={t("pageTitle") || ""}>
   <Header />
   <Body />
   <AstroButton />

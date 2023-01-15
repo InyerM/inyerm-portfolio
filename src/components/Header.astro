@@ -1,4 +1,5 @@
 ---
+import { LanguageSelector } from "astro-i18next/components";
 import NavButton from "./NavButton.astro";
 const navButtons = [
   { name: "Home", href: "#" },
@@ -9,13 +10,13 @@ const navButtons = [
 
 <header>
   <section
-    class="flex justify-between items-center max-w-4xl h-full mx-auto py-8 px-2 md:px-0 flex-col md:flex-row"
-  >
+    class="flex justify-between items-center max-w-4xl h-full mx-auto py-8 px-2 md:px-0 flex-col md:flex-row">
     <h1 class="font-black text-2xl text-white md:text-left text-center">
       {`</InyerM>`}
     </h1>
     <nav class="flex flex-col md:flex-row md:gap-8 gap-2 my-2 md:my-0">
       {navButtons.map((button, index) => <NavButton {...button} key={index} />)}
     </nav>
+    <LanguageSelector class="languages" />
   </section>
 </header>

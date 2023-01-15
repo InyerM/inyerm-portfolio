@@ -15,16 +15,8 @@ body {
 }
 
 .languages {
-  border: 2px solid var(--color-border);
-  margin-top: 2rem;
-  appearance: none;
-  background-color: white;
-  border-radius: 0.25rem;
-  padding: 0.4em 0.6em;
-  font-family: system-ui, sans-serif;
-  font-size: var(--font-size-base);
-}
-
-.languages:is(:hover, :focus-within) {
-  border-color: #4f39fa;
+  @apply flex flex-row justify-center items-center px-3 py-2 appearance-none rounded-lg
+  bg-blue-200 text-blue-800 font-semibold text-sm cursor-pointer hover:bg-blue-300
+  transition duration-300 ease-in-out text-center;
+  ;
 }
