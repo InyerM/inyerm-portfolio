@@ -1,5 +1,5 @@
-import { technologies as techs } from "../../constants";
 import { t } from "i18next";
+import { technologies as techs } from "../../constants";
 
 interface Props {
   title: string;

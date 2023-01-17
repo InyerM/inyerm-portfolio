@@ -2,6 +2,7 @@
 const { href, name } = Astro.props;
 ---
 
-<button class="cta">
+<a class="cta" href={href}>
   <span class="hover-underline-animation">{name}</span>
-</button>
+</a>
+
