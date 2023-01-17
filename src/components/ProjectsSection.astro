@@ -14,7 +14,7 @@ import { t } from "i18next";
       projects.map((project) => {
         return (
           <section class="relative">
-            <ProjectCard {...project} client:load />
+            <ProjectCard {...project} client:visible />
             <ViewButton link={project.link} />
           </section>
         );
@@ -22,3 +22,4 @@ import { t } from "i18next";
     }
   </section>
 </section>
+

@@ -25,6 +25,7 @@
     "open-jira": "Proyecto hecho para practicar con NextJs y renderizado del lado del servidor. Es un clon simple de Jira con funciones limitadas.",
     "pokemon-static": "Este es un proyecto simple hecho para practicar con NextJs y generación de sitios estáticos. Es una aplicación simple de pokemon con una lista de pokemons y una página de detalles.",
     "rick-and-morty": "Proyecto hecho con Svelte y SvleteKit. Es una aplicación simple con una lista de personajes de Rick y Morty y una página de detalles.",
-    "xkcs-comics-app": "Aplicación NextJs con una lista de cómics de XKCD y una página de detalles. Es un proyecto simple hecho para practicar con NextJs y renderizado del lado del servidor."
+    "xkcd-comics-app": "Aplicación NextJs con una lista de cómics de XKCD y una página de detalles. Es un proyecto simple hecho para practicar con NextJs y renderizado del lado del servidor."
   }
 }
+

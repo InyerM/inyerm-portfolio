@@ -1,3 +1,6 @@
+import { technologies as techs } from "../../constants";
+import { t } from "i18next";
+
 interface Props {
   title: string;
   description: string;
@@ -8,9 +11,6 @@ interface Props {
   githubUrl: string;
 }
 
-import { useTranslation } from "react-i18next";
-import { technologies as techs } from "../../constants";
-
 export const ProjectCard: React.FC<Props> = ({
   description,
   image,
@@ -18,7 +18,6 @@ export const ProjectCard: React.FC<Props> = ({
   title,
   githubUrl,
 }) => {
-  const { t } = useTranslation("translation");
   const push = () => window.open(githubUrl, "_blank");
 
   return (
@@ -45,3 +44,4 @@ export const ProjectCard: React.FC<Props> = ({
     </div>
   );
 };
+
