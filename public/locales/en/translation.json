@@ -15,7 +15,7 @@
   },
   "projectsSection": {
     "title": "Projects",
-    "subtitle": "Here are some of my projects"
+    "subtitle": "Here you can find some of my most recent projects. You can see the code in my <0>GitHub</0>. Most of them are developed with NextJs, React, Svelte"
   },
   "projectCard": {
     "view": "View",
@@ -28,6 +28,18 @@
       "rick-and-morty": "Project made with Svelte and SvleteKit. It's a simple app with a list of characters from Rick and Morty and a detail page.",
       "xkcd-comics-app": "NextJs app with a list of comics from XKCD and a detail page. It's a simple project made for practicing with NextJs and Server side rendering."
     }
+  },
+  "contactSection": {
+    "title": "Contact",
+    "description": "If you want to contact me, you can do it through the following links",
+    "contactViaMessage": "You can send me a message through the following <0>form</0>",
+    "message": "Message",
+    "subject": "Subject",
+    "sendMessage": "Send Message",
+    "email": "Via email",
+    "linkedin": "Via LinkedIn",
+    "github": "Via GitHub",
+    "twitter": "Via Twitter"
   }
 }
 

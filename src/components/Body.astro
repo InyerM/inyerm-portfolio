@@ -1,14 +1,15 @@
 ---
+import ContactSection from "./ContactSection.astro";
 import Divider from "./Divider.astro";
 import HomeSection from "./HomeSection.astro";
 import ProjectsSection from "./ProjectsSection.astro";
 ---
 
-<section
-  class="flex flex-col justify-center items-center p-5 gap-2 text-center max-w-5xl mx-auto"
->
+<section class="flex flex-col justify-center items-center p-5 gap-2 text-center max-w-5xl mx-auto">
   <HomeSection />
   <Divider id="projects" />
   <ProjectsSection />
   <Divider id="contact" />
+  <ContactSection />
 </section>
+

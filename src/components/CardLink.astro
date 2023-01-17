@@ -1,0 +1,22 @@
+---
+interface Props {
+  message: string;
+  name: string;
+  href: string;
+  img: string;
+}
+
+const { message, name, href, img } = Astro.props;
+---
+
+<a
+  class="flex items-center justify-center w-full p-1 m-auto overflow-hidden text-sm font-bold transition ease-in-out bg-white border-2 shadow-2xl sm:px-4 sm:py-2 gap-x-9 sm:flex-col sm:w-48 rounded-3xl bottom-4 sm:left-auto sm:bottom-8 sm:right-8 hover:scale-105"
+  target="_blank"
+  rel="noreferrer noopener"
+  href={href}>
+  {message}
+  <div class="flex items-center w-16 h-8 sm:w-24 sm:h-8 flex mt-[1px] gap-2 justify-center">
+    <img src={`/assets/${img}.svg`} alt="Github Logo" width="35" />
+    <span class="text-lg font-bold text-gray-800">{name}</span>
+  </div>
+</a>

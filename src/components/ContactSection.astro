@@ -1,0 +1,72 @@
+---
+import { Trans } from "astro-i18next/components";
+import { t } from "i18next";
+import CardLink from "./CardLink.astro";
+
+const options = [
+  {
+    message: t("contactSection.email"),
+    href: "mailto:inyermedina10@gamil.com",
+    name: "email",
+    img: "gmail-icon",
+  },
+  {
+    message: t("contactSection.github"),
+    href: "",
+    name: "github",
+    img: "github-icon",
+  },
+  {
+    message: t("contactSection.linkedin"),
+    href: "",
+    name: "linkedin",
+    img: "linkedin-icon",
+  },
+  {
+    message: t("contactSection.twitter"),
+    href: "",
+    name: "twitter",
+    img: "twitter-icon",
+  },
+];
+---
+
+<section class="mx-auto my-10 w-full">
+  <h1 class="text-5xl font-black text-white">{t("contactSection.title")}</h1>
+  <p class="mt-5 text-lg text-white max-w-xl mx-auto">{t("contactSection.description")}</p>
+  <div class="my-20 grid sm:grid-cols-2 grid-cols-1 gap-x-3 justify-items-start items-start">
+    <section class="grid md:grid-cols-2 gap-5 grid-cols-1 my-5">
+      {
+        options.map((option) => (
+          <CardLink
+            message={t(option.message)}
+            href={option.href}
+            name={option.name}
+            img={option.img}
+          />
+        ))
+      }
+    </section>
+    <section class="flex flex-col gap-3 w-full mx-2 md:my-0 my-5">
+      <p class="text-white text-md my-2 text-start">
+        <Trans i18nKey="contactSection.contactViaMessage">
+          You can send me a message through the following <span class="text-red-500">form</span>
+        </Trans>
+      </p>
+      <input
+        type="text"
+        class="bg-gray-800 text-white p-2 rounded-lg border-none outline-none ring-blue-300 focus:ring-1 mt-2 w-full transition-all duration-300"
+        placeholder={t("contactSection.subject")}
+      />
+      <textarea
+        class="bg-gray-800 text-white p-2 rounded-lg border-none outline-none ring-blue-300 focus:ring-1 mt-2 w-full transition-all duration-300"
+        placeholder={t("contactSection.message")}
+        maxlength="300"></textarea>
+      <button
+        class="bg-gray-800 text-white p-2 rounded-md mt-2 hover:bg-gray-600 hover:scale-105 transition-all duration-[400ms] rounded-lg border-none outline-none ring-blue-300 focus:ring-1">
+        <i class="bx bx-send mr-2"></i>
+        {t("contactSection.sendMessage")}
+      </button>
+    </section>
+  </div>
+</section>
