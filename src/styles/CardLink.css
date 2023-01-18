@@ -1,0 +1,77 @@
+.card-link {
+  @apply cursor-pointer relative flex justify-center items-center rounded-lg 
+  bg-slate-700 shadow-lg overflow-hidden border-none px-4 w-full py-3;
+}
+
+.card-link:after {
+  @apply content-[""] w-0 h-full absolute transition-all 
+  duration-300 ease-in-out right-0 hover:right-auto hover:left-0 hover:w-full;
+}
+
+
+.card-link:hover::after {
+  @apply w-full left-0 right-auto;
+}
+
+.card-link span {
+  @apply text-center w-full py-4 px-6 text-white text-lg font-bold tracking-wider 
+  z-20 transition-all ease-in-out duration-300;
+}
+
+.card-link:hover span {
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.card-link img {
+  @apply grayscale brightness-200 z-30;
+}
+
+.card-link:hover img {
+  @apply filter-none;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+/* 
+.card-link span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-link:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+} */

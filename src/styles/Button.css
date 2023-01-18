@@ -52,3 +52,22 @@
 .cssbuttons-io:active {
   transform: scale(0.95);
 }
+
+.send-button {
+  @apply bg-gray-800 text-white p-2 mt-2 relative rounded-lg border-none outline-none 
+  ring-blue-300 focus:ring-1 overflow-hidden flex justify-center items-center ;
+}
+
+.send-button::after {
+  @apply content-[""] w-0 h-full absolute transition-all bg-violet-800
+  duration-300 ease-in-out right-0 hover:right-auto hover:left-0 hover:w-full;
+}
+
+.send-button:hover::after {
+  @apply w-full left-0 right-auto;
+}
+
+.send-button span, .send-button i {
+  @apply text-white text-base font-semibold tracking-wider 
+  z-20 transition-all ease-in-out duration-300;
+}

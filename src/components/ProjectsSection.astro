@@ -20,7 +20,7 @@ import { Trans } from "astro-i18next/components";
     {
       projects.map((project) => {
         return (
-          <section class="relative justify-self-center">
+          <section class="relative justify-self-center w-full">
             <ProjectCard {...project} client:visible />
             <ViewButton link={project.link} />
           </section>
